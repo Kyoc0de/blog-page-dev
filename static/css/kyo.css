@@ -47,6 +47,24 @@
     padding-bottom: 5em !important;
 }
 
+/*margin*/
+.k-margin-tb-tiny{
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+
+.k-margin-top-small{
+    margin-top: 0.5em !important;
+}
+
+.k-margin-top{
+    margin-top: 1em !important;
+}
+
+.k-margin-top-large{
+    margin-top: 2em !important;
+}
+
 .k-text{
     font-weight: 300 !important;
     letter-spacing: 1px !important;
@@ -77,4 +95,9 @@
 .k-container{
     max-width: 72em !important;
     margin: auto !important;
+}
+
+/*color*/
+.k-black-color{
+    color: #333 !important;
 }
