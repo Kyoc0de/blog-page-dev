@@ -1,0 +1,25 @@
+.k-padded-tb-mini{
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+}
+
+.k-padded-tb-massive{
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+}
+
+.k-text-thin{
+    font-weight: 300 !important;
+}
+
+.k-text-spaced{
+    letter-spacing: 1px !important;
+}
+
+.k-text-lined{
+    line-height: 1.8 !important;
+}
+
+.k-opacity-mini{
+    opacity: 0.8 !important;
+}
