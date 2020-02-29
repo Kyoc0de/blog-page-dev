@@ -1,11 +1,56 @@
+
+.k-padded-mini{
+    padding: 0.2em !important;
+}
+
+.k-padded-tiny{
+    padding: 0.3em !important;
+}
+
 .k-padded-tb-mini{
     padding-top: 0.2em !important;
     padding-bottom: 0.2em !important;
 }
 
-.k-padded-tb-massive{
+.k-padded-tb-tiny{
+    padding-top: 0.3em !important;
+    padding-bottom: 0.3em !important;
+}
+
+.k-padded-tb-small{
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+
+.k-padded-tb{
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+
+.k-padded-tb-large{
     padding-top: 2em !important;
     padding-bottom: 2em !important;
+}
+
+.k-padded-tb-big{
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+
+.k-padded-tb-huge{
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+}
+
+.k-padded-tb-massive{
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+
+.k-text{
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.8 !important;
 }
 
 .k-text-thin{
@@ -22,4 +67,14 @@
 
 .k-opacity-mini{
     opacity: 0.8 !important;
+}
+
+/*  display   */
+.k-inline-block{
+    display: inline-block !important;
+}
+
+.k-container{
+    max-width: 72em !important;
+    margin: auto !important;
 }
