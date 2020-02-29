@@ -13,14 +13,14 @@
 <!--导航-->
 <nav class="ui inverted attached segment k-padded-tb-mini">
     <div class="ui container">
-        <div class="ui inverted secondary menu">
-            <h2 class="ui header item">Kyo's Blog</h2>
-            <a href="#" class="item active"><i class="home icon"></i>首页 | Home</a>
-            <a href="#" class="item">分类</a>
-            <a href="#" class="item">标签</a>
-            <a href="#" class="item">归档</a>
-            <a href="#" class="item"><i class="info icon"></i>关于我</a>
-            <div class="right item">
+        <div class="ui inverted secondary stackable  menu">
+            <h2 class="ui header item"> Kyo's Blog</h2>
+            <a href="#" class="k-item k-mobile-hide item active"><i class="home icon"></i>首页 | Home</a>
+            <a href="#" class="k-item k-mobile-hide item">分类</a>
+            <a href="#" class="k-item k-mobile-hide item">标签</a>
+            <a href="#" class="k-item k-mobile-hide item">归档</a>
+            <a href="#" class="k-item k-mobile-hide item"><i class="info icon"></i>关于我</a>
+            <div class="right item k-item k-mobile-hide">
                 <div class="ui icon inverted transparent input">
                     <input type="text" placeholder="搜索 | Search...">
                     <i class="search link icon"></i>
@@ -28,13 +28,16 @@
             </div>
         </div>
     </div>
+    <a href="#" class="ui menu toggle black middle aligned icon button k-top-right k-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
 </nav>
 
 <!--中间内容-->
 
     <div class="k-container k-padded-tb-large">
         <div class="ui container">
-            <div class="ui grid">
+            <div class="ui stackable grid">
                 <div class="twelve wide column">
 <!--                左边    内容头部    -->
                     <div class="ui top attached segment">
@@ -50,7 +53,7 @@
 <!--                    内容中间部分  -->
                     <div class="ui attached segment">
                         <div class="ui padded vertical segment k-padded-tb-large">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="twelve wide column">
                                     <h3 class="ui header">测试用标题</h3>
                                     <p class="k-text">测试用段落内容,并没有实际内容,只是为了测试占位,进一步内容有待后续开发...</p>
@@ -87,7 +90,7 @@
 
 <!--                        copy 占位-->
                         <div class="ui padded vertical segment k-padded-tb-large">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="twelve wide column">
                                     <h3 class="ui header">测试用标题</h3>
                                     <p class="k-text">测试用段落内容,并没有实际内容,只是为了测试占位,进一步内容有待后续开发...</p>
@@ -122,7 +125,7 @@
                             </div>
                         </div>
                         <div class="ui padded vertical segment k-padded-tb-large">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="twelve wide column">
                                     <h3 class="ui header">测试用标题</h3>
                                     <p class="k-text">测试用段落内容,并没有实际内容,只是为了测试占位,进一步内容有待后续开发...</p>
@@ -170,7 +173,25 @@
                     </div>
                 </div>
 <!--                右边导航    -->
+
+
+
                 <div class="four wide column">
+                    <!--                公告开发    -->
+                    <div class="ui segments">
+                        <div class="ui secondary segment">
+                                <div class="column">
+                                    <i class="comment icon"></i>公告
+                                </div>
+                        </div>
+                        <div class="ui black segment">
+
+
+                                项目正在开发当中欢迎浏览!
+                            <br>
+                            当前版本1.0
+                        </div>
+                    </div>
 <!--                    分类-->
                     <div class="ui segments">
                         <div class="ui secondary segment">
@@ -270,7 +291,7 @@
 <!--底部-->
 <footer class="ui inverted vertical segment k-padded-tb-big">
     <div class="ui center aligned container">
-        <div class="ui inverted divided grid">
+        <div class="ui inverted divided stackable grid">
             <div class="three wide column">
                 <div class="ui inverted link list">
                     <div class="item">
@@ -310,5 +331,12 @@
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 <!-- semantic js -->
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+<!--导航隐藏显示切换-->
+<script>
+    $('.menu.toggle').click(function () {
+        $('.k-item').toggleClass('k-mobile-hide');
+    });
+</script>
 </body>
 </html>

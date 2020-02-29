@@ -101,3 +101,24 @@
 .k-black-color{
     color: #333 !important;
 }
+
+/*position*/
+.k-top-right{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.k-mobile-show{
+    display: none !important;
+}
+
+@media screen and (max-width: 768px){
+    .k-mobile-hide{
+        display: none!important;
+    }
+    .k-mobile-show{
+        display: block!important;
+    }
+}
+
