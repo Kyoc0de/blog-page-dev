@@ -31,6 +31,10 @@ body{
     padding-bottom: 1em !important;
 }
 
+.k-padded{
+    padding: 1em !important;
+}
+
 .k-padded-tb-large{
     padding-top: 2em !important;
     padding-bottom: 2em !important;
@@ -134,6 +138,16 @@ body{
     position: absolute;
     top:0;
     right: 0;
+}
+
+.k-fixed {
+    position: fixed !important;
+    z-index: 10 !important;
+}
+
+.k-right-bottom{
+    bottom: 0!important;
+    right: 0!important;
 }
 
 .k-mobile-show{
