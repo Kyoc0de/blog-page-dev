@@ -6,6 +6,8 @@
     <title>首页</title>
     <!--    semantic css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<!--    markdown css-->
+    <link rel="stylesheet" href="../static/lib/editormd/css/editormd.min.css">
     <!--    自定义 css -->
     <link rel="stylesheet" href="../static/css/kyo.css">
 </head>
@@ -68,7 +70,10 @@
                     </div>
                 </div>
                 <div class="field">
-                    <textarea name="content" placeholder="博客内容"></textarea>
+                    <div id="md-content" style="z-index: 1 !important;">
+                        <textarea name="content" placeholder="博客内容" style="display: none"></textarea>
+                    </div>
+
                 </div>
 
                 <div class="two fields">
@@ -194,9 +199,21 @@
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 <!-- semantic js -->
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--markdown js-->
+<script src="../static/lib/editormd/editormd.min.js"></script>
 
 <!--导航隐藏显示切换-->
 <script>
+    // 初始化Markdown编辑器
+    var contentEditor;
+    $(function() {
+        contentEditor = editormd("md-content", {
+            width   : "100%",
+            height  : 640,
+            syncScrolling : "single",
+            path    : "../static/lib/editormd/lib/"
+        });
+    });
     $('.menu.toggle').click(function () {
         $('.k-item').toggleClass('k-mobile-hide');
     });
